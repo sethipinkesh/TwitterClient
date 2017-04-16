@@ -48,7 +48,18 @@ Describe any challenges encountered while building the app.
 - Closures handling
 - Lots of time got invest in understanding Twitter API and response.
 - Set autolayout constraints programatically
+## Notes
+- Autolayout when mutiple labels are horrizontaly placed
+- Table with mutiple section and custom switches
+- Handling Yelp API based on the selected data
 
+# Credits: 
+- AFNetworking
+- BDBOAuth1Manager
+- SevenSwitch
+- MBProgressHUD
+
+For icons: https://iconmonstr.com
 ## License
 
     Copyright [2017] [Pinkesh Sethi]
