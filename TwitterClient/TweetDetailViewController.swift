@@ -11,6 +11,8 @@ import UIKit
 class TweetDetailViewController: UIViewController, AddNewTweetViewControllerDelegate {
     var tweet: Tweet!
     
+    @IBOutlet weak var senderThumbImageTopViewConstraint: NSLayoutConstraint!
+    @IBOutlet weak var senderNameLbelTopViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var favoritesImageView: UIButton!
     @IBOutlet weak var retweetImageView: UIButton!
     @IBOutlet weak var replyImageView: UIButton!
@@ -60,6 +62,21 @@ class TweetDetailViewController: UIViewController, AddNewTweetViewControllerDele
             
             if tweet.didUserFavorites {
                 favoritesImageView.setBackgroundImage(UIImage(named: "favorite_sel_ic.png"), for: UIControlState.normal)
+            }
+            
+            if(tweet.retweetUserName != nil){
+                retweetedNotifyImageView.isHidden = false
+                retweetedSenderNameLabel.isHidden = false
+                retweetedSenderNameLabel.text = tweet.retweetUserName! + (" retweeted")
+                senderThumbImageTopViewConstraint.constant = 5
+                senderNameLbelTopViewConstraint.constant = 10
+                
+            }else{
+                retweetedNotifyImageView.isHidden = true
+                retweetedSenderNameLabel.isHidden = true
+                senderThumbImageTopViewConstraint.constant = -20
+                senderNameLbelTopViewConstraint.constant = -20
+                
             }
         }
     }

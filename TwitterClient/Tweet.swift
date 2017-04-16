@@ -123,11 +123,10 @@ class Tweet: NSObject {
         let hours = intervalMS / (60 * 60)
         let remainder = intervalMS % 3600
         let minutes = remainder / 60
-        let seconds = remainder % 60
         
         if hours < 1 {
             if(minutes<1){
-                return "\(seconds)s"
+                return "Just now"
             }else{
                 return "\(minutes)m"
             }

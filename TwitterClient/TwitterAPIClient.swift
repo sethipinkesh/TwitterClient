@@ -9,6 +9,7 @@
 import UIKit
 import BDBOAuth1Manager
 
+
 class TwitterAPIClient: BDBOAuth1SessionManager {
     
     static let sharedInstance = TwitterAPIClient(baseURL: URL(string: "https://api.twitter.com"), consumerKey: "k1hZEy6xAGaPvZqsHegMqwO47", consumerSecret: "HzZJWKD4NayvJ4vGJF2hgTWojy14HJDhrJ0Wk2KfIz5THpMWp7")

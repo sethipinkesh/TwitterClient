@@ -26,6 +26,7 @@ class AddNewTweetViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         tweetTextView.delegate = self
+        tweetTextView.becomeFirstResponder()
         let user  = User.currentUser
         userScreenNameLabel.text = "@"+(user?.screenName)!
         userNameLabel.text = user?.name

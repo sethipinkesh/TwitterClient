@@ -119,7 +119,6 @@
 				B3189EB21EA1DD64008A306B /* TweetsViewController.swift */,
 				B322D6931EA2760B00E01F74 /* TweetDetailViewController.swift */,
 				B322D6951EA2B8D100E01F74 /* AddNewTweetViewController.swift */,
-				B3189EB41EA1E315008A306B /* TweetCell.swift */,
 				B3189EAA1EA11D63008A306B /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
@@ -137,6 +136,7 @@
 		B3189EA71E9FFF26008A306B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B3189EB41EA1E315008A306B /* TweetCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
